@@ -1,0 +1,16 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+container{width:100%;
+  padding-right:15px;
+  padding-left:15px;
+  margin-right:auto;
+  margin-left:auto
+}
+
+.darkSection {
+   height: 1000px;
+   background-color: #302D2A;
+}
