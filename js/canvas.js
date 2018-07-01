@@ -1,7 +1,7 @@
 var canvas = document.querySelector('canvas');
 var ctx;
 var image = new Image();
-image.src = 'https://127.0.0.1:7889/logo.png';
+image.src = '/img/logo.png';
 
 
 //------------------------Particle Background
