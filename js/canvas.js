@@ -1,7 +1,7 @@
 var canvas = document.querySelector('canvas');
 var ctx;
 var image = new Image();
-image.src = 'http://127.0.0.1:7889/logo.png';
+image.src = 'https://127.0.0.1:7889/logo.png';
 
 
 //------------------------Particle Background
@@ -32,7 +32,7 @@ ctx = canvas.getContext('2d');
 ctx.font="20pt 'Roboto', sans-serif";
 ctx.textAlign = "center";
 ctx.fillStyle = "#302D2A";
-ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,427);
+ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
 ctx.drawImage(image, window.innerWidth/2-223, 75);
 
 function init() {
@@ -111,11 +111,8 @@ function init() {
 	container.appendChild(buttonDiv);
 
 	EAButton.onclick = function(){
-		$('html, body').animate({
-   scrollTop: $(document).height()-$(window).height()},
-   1400,
-   "easeOutQuint"
-);
+  	$("html, body").animate({ scrollTop: $(document).height()-$(window).height() });
+		document.getElementById("exampleInputEmail1").focus();
 	}
 
 
