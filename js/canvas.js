@@ -32,11 +32,13 @@ ctx = canvas.getContext('2d');
 ctx.font="20pt 'Roboto', sans-serif";
 ctx.textAlign = "center";
 ctx.fillStyle = "#302D2A";
-ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,477);
-ctx.drawImage(image, window.innerWidth/2-223, 125);
+ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,427);
+ctx.drawImage(image, window.innerWidth/2-223, 75);
 
 function init() {
 	container = document.createElement( 'div' );
+
+
 	document.body.appendChild( container );
 	if(container) {
     	container.className += container.className ? ' waves' : 'waves';
@@ -89,6 +91,34 @@ function init() {
 
 	container.appendChild( renderer.domElement );
 
+	var buttonDiv = document.createElement( 'div' );
+	buttonDiv.className = 'buttonContainer';
+
+	var downloadButton = document.createElement('button');
+	downloadButton.type = 'button';
+	downloadButton.className = 'btn btn-outline-warning titleButton';
+	downloadButton.innerHTML = "Download One-Pager"
+	downloadButton.style.marginLeft = '20px';
+
+	var EAButton = document.createElement('button');
+	EAButton.type = 'button';
+	EAButton.className = 'btn btn-outline-warning titleButton';
+	EAButton.innerHTML = "Get Early Access"
+	EAButton.style.marginLeft = '20px';
+
+	buttonDiv.appendChild(EAButton);
+	buttonDiv.appendChild(downloadButton);
+	container.appendChild(buttonDiv);
+
+	EAButton.onclick = function(){
+		$('html, body').animate({
+   scrollTop: $(document).height()-$(window).height()},
+   1400,
+   "easeOutQuint"
+);
+	}
+
+
 	window.addEventListener( 'resize', onWindowResize, false );
 
 }
@@ -135,6 +165,8 @@ function render() {
 	count += 0.2;
 
 }
+
+
 
 
 //------------------------
