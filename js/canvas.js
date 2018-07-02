@@ -1,8 +1,7 @@
 var canvas = document.querySelector('canvas');
 var ctx;
 var image = new Image();
-image.src = '../img/logo.png';
-
+image.src = '/../img/logo.png';
 
 //------------------------Particle Background
 
@@ -97,7 +96,7 @@ function init() {
 	var downloadButton = document.createElement('button');
 	downloadButton.type = 'button';
 	downloadButton.className = 'btn btn-outline-warning titleButton';
-	downloadButton.innerHTML = "Download One-Pager"
+	downloadButton.innerHTML = "View One-Pager"
 	downloadButton.style.marginLeft = '20px';
 
 	var EAButton = document.createElement('button');
@@ -115,6 +114,9 @@ function init() {
 		document.getElementById("exampleInputEmail1").focus();
 	}
 
+	downloadButton.onclick = function(){
+		window.open("https://docs.google.com/document/d/1s7N_is68dbARNeZNjw0EAZyYc2W5d9AkaFWP1Bhl8wM/edit");
+	}
 
 	window.addEventListener( 'resize', onWindowResize, false );
 
