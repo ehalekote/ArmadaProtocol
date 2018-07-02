@@ -24,8 +24,10 @@ var particles, particle, count = 0;
 var windowHalfX = window.innerWidth / 2;
 var windowHalfY = window.innerHeight / 2;
 
-init();
-animate();
+image.onload = function(){
+	init();
+	animate();
+}
 
 ctx = canvas.getContext('2d');
 ctx.font="20pt 'Roboto', sans-serif";

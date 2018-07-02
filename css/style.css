@@ -7,7 +7,7 @@ html, body {
 
 canvas {
     z-index: -1;
-    margin:auto;
+
 }
 
 #exampleInputEmail1 {
@@ -70,9 +70,10 @@ margin-bottom: 20px;
 
 
 .buttonContainer{
-  top: 50%;
-  left: 37.8%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .btn.btn-primary:hover,
