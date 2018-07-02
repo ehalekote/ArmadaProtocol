@@ -1,7 +1,7 @@
 var canvas = document.querySelector('canvas');
 var ctx;
 var image = new Image();
-image.src = 'https://github.com/ehalekote/ArmadaProtocol/blob/master/img/logo.png';
+image.src = '/ArmadaProtocol/img/logo.png';
 
 //------------------------Particle Background
 
