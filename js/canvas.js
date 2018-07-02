@@ -1,6 +1,8 @@
 var canvas = document.querySelector('canvas');
 var ctx;
 var image = new Image();
+image.src = '/ArmadaProtocol/img/logo.png';
+
 //------------------------Particle Background
 
 var SEPARATION = 40, AMOUNTX = 130, AMOUNTY = 35;
@@ -27,7 +29,6 @@ image.onload = function(){
 	animate();
 }
 
-image.src = '/ArmadaProtocol/img/logo.png';
 
 
 ctx = canvas.getContext('2d');
