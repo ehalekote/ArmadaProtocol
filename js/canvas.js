@@ -33,11 +33,11 @@ ctx = canvas.getContext('2d');
 ctx.font="20pt 'Roboto', sans-serif";
 ctx.textAlign = "center";
 ctx.fillStyle = "#302D2A";
-image.src = '/ArmadaProtocol/img/logo.png';
+image.src = "/ArmadaProtocol/img/logo.png";
 ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
+ctx.drawImage(image, window.innerWidth/2-223, 75);
 
 function loadedImage(){
-	ctx.drawImage(image, window.innerWidth/2-223, 75);
 	alert("image loaded");
 }
 // image.onload = function(){
