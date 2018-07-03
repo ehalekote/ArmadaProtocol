@@ -143,6 +143,7 @@ function onWindowResize() {
 	camera.updateProjectionMatrix();
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
+	ctx.drawImage(image, window.innerWidth/2-223, 75);
 
 }
 
