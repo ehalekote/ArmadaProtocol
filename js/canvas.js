@@ -37,6 +37,7 @@ image.src = '/ArmadaProtocol/img/logo.png';
 ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
 
 function loadedImage(){
+	alert("image loaded");
 	ctx.drawImage(image, window.innerWidth/2-223, 75);
 }
 // image.onload = function(){
