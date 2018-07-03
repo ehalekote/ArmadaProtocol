@@ -1,7 +1,6 @@
 var canvas = document.querySelector('canvas');
 var ctx;
 var image = new Image();
-image.src = '/ArmadaProtocol/img/logo.png';
 
 //------------------------Particle Background
 
@@ -34,8 +33,15 @@ ctx = canvas.getContext('2d');
 ctx.font="20pt 'Roboto', sans-serif";
 ctx.textAlign = "center";
 ctx.fillStyle = "#302D2A";
-ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
-ctx.drawImage(image, window.innerWidth/2-223, 75);
+
+image.onload = function(){
+	ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
+	ctx.drawImage(image, window.innerWidth/2-223, 75);
+
+}
+
+image.src = '/ArmadaProtocol/img/logo.png';
+
 
 function init() {
 	container = document.createElement( 'div' );
