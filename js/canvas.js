@@ -41,7 +41,9 @@ image.onload = function(){
 };
 
 window.onresize= function(event){
-	ctx.drawImage(image, window.innerWidth/2-223, 75);
+	image.onload = function(){
+		ctx.drawImage(image, window.innerWidth/2-223, 75);
+	}
 };
 
 
