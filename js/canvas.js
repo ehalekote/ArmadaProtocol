@@ -40,6 +40,10 @@ image.onload = function(){
 	ctx.drawImage(image, window.innerWidth/2-223, 75);
 };
 
+window.onresize= function(event){
+	ctx.drawImage(image, window.innerWidth/2-223, 75);
+};
+
 
 
 function init() {
@@ -143,11 +147,6 @@ function onWindowResize() {
 	camera.updateProjectionMatrix();
 
 	renderer.setSize( window.innerWidth, window.innerHeight );
-
-	image.onload = function(){
-		ctx.drawImage(image, window.innerWidth/2-223, 75);
-		alert('RESIZED');
-	}
 
 }
 
