@@ -146,6 +146,7 @@ function onWindowResize() {
 
 	image.onload = function(){
 		ctx.drawImage(image, window.innerWidth/2-223, 75);
+		alert('RESIZED');
 	}
 
 }
