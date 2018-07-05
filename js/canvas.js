@@ -34,11 +34,10 @@ ctx.font="20pt 'Roboto', sans-serif";
 ctx.textAlign = "center";
 ctx.fillStyle = "#302D2A";
 image.src = "/ArmadaProtocol/img/logo.png";
+ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
 
 image.onload = function(){
 	ctx.drawImage(image, window.innerWidth/2-223, 75);
-	ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
-
 };
 
 window.onresize= function(event){
