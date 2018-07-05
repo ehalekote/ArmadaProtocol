@@ -42,7 +42,9 @@ image.onload = function(){
 
 window.onresize= function(event){
 	image.onload = function(){
-		ctx.drawImage(image, window.innerWidth/2-223, 75);
+		//ctx.clearRect(0, 0, canvas.width, canvas.height);
+		//ctx.drawImage(image, window.innerWidth/2-223, 75);
+		//ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
 	}
 };
 
