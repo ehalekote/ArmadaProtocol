@@ -29,17 +29,21 @@ var windowHalfY = window.innerHeight / 2;
 
 
 var link = document.querySelector('link');
-console.log(link);
-ctx = canvas.getContext('2d');
-ctx.font="20pt 'Roboto', sans-serif";
-ctx.textAlign = "center";
-ctx.fillStyle = "#302D2A";
-image.src = "/ArmadaProtocol/img/logo.png";
-ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
+link.onload = function() {
 
-image.onload = function(){
-	ctx.drawImage(image, window.innerWidth/2-223, 75);
-};
+	ctx = canvas.getContext('2d');
+	ctx.font="20pt 'Roboto', sans-serif";
+	ctx.textAlign = "center";
+	ctx.fillStyle = "#302D2A";
+	image.src = "/ArmadaProtocol/img/logo.png";
+	ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
+
+	image.onload = function(){
+		ctx.drawImage(image, window.innerWidth/2-223, 75);
+	};
+
+
+}
 
 window.onresize= function(event){
 	image.onload = function(){
