@@ -29,6 +29,7 @@ var windowHalfY = window.innerHeight / 2;
 
 
 var link = document.querySelector('link');
+console.log(link);
 ctx = canvas.getContext('2d');
 ctx.font="20pt 'Roboto', sans-serif";
 ctx.textAlign = "center";
