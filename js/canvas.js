@@ -124,7 +124,7 @@ function init() {
 	EAButton.style.marginLeft = '10px';
 
 	var buttonHouse = document.createElement( 'div');
-	buttonHouse.className = 'buttonHouse';\
+	buttonHouse.className = 'buttonHouse';
 
 	buttonHouse.appendChild(EAButton);
 	buttonHouse.appendChild(downloadButton);
