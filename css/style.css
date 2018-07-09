@@ -85,8 +85,16 @@ margin-bottom: 20px;
 }
 
 .buttonHouse{
-  width: 70%;
+  width: 100%;
   margin: 0 auto;
+}
+
+.downloadButton{
+  float: right;
+}
+
+.EAButton{
+  float: left;
 }
 
 .btn.btn-primary:hover,
