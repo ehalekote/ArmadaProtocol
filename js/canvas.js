@@ -112,7 +112,7 @@ function init() {
 	downloadButton.type = 'button';
 	downloadButton.className = 'btn btn-outline-warning titleButton downloadButton';
 	downloadButton.innerHTML = "View One-Pager"
-	downloadButton.style.marginLeft = '10px';
+	downloadButton.style.marginLeft = '0px';
 	downloadButton.style.marginRight = '10px';
 
 
@@ -120,7 +120,7 @@ function init() {
 	EAButton.type = 'button';
 	EAButton.className = 'btn btn-outline-warning titleButton EAButton';
 	EAButton.innerHTML = "Get Early Access"
-	EAButton.style.marginRight = '10px';
+	EAButton.style.marginRight = '0px';
 	EAButton.style.marginLeft = '10px';
 
 	var buttonHouse = document.createElement( 'div');
