@@ -136,7 +136,7 @@ function init() {
 	var mainLogo = document.createElement( 'div');
 	mainLogo.className = 'mainLogo';
 	var imgmainLogo = document.createElement( 'img' );
-	imgmainLogo.src = "/ArmadaProtocol/img/logo.png";
+	imgmainLogo.src = "../img/logo.png";
 	mainLogo.appendChild(imgmainLogo);
 
   buttonDiv.appendChild(mainLogo);
