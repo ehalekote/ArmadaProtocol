@@ -84,6 +84,9 @@ margin-bottom: 20px;
   padding-bottom: 15px;
 }
 
+.buttonHouse{
+  width: 20%;
+}
 
 .downloadButton{
   float: right;
