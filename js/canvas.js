@@ -133,7 +133,7 @@ function init() {
 	imgmainLogo.src = "/ArmadaProtocol/img/logo.png";
 	mainLogo.appendChild(imgmainLogo);
 
-  buttondiv.appendChild(mainLogo);
+  buttonDiv.appendChild(mainLogo);
 	buttonDiv.appendChild(mainText);
 	buttonDiv.appendChild(EAButton);
 	buttonDiv.appendChild(downloadButton);
