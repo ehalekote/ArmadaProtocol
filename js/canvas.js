@@ -123,6 +123,12 @@ function init() {
 	EAButton.style.marginRight = '10px';
 	EAButton.style.marginLeft = '10px';
 
+	var buttonHouse = document.createElement( 'div');
+	buttonHouse.className = 'buttonHouse';\
+
+	buttonHouse.appendChild(EAButton);
+	buttonHouse.appendChild(downloadButton);
+
 	var mainText = document.createElement( 'div' );
 	mainText.className = 'mainText';
 	mainText.innerHTML = "Bundling the world's digital assets.";
@@ -135,8 +141,7 @@ function init() {
 
   buttonDiv.appendChild(mainLogo);
 	buttonDiv.appendChild(mainText);
-	buttonDiv.appendChild(EAButton);
-	buttonDiv.appendChild(downloadButton);
+	buttonDiv.appendChild(buttonHouse);
 	container.appendChild(buttonDiv);
 
 	EAButton.onclick = function(){
