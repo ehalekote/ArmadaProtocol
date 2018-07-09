@@ -29,24 +29,24 @@ var windowHalfY = window.innerHeight / 2;
 
 
 
-ctx = canvas.getContext('2d');
-ctx.font="20pt 'Roboto', sans-serif";
-ctx.textAlign = "center";
-ctx.fillStyle = "#302D2A";
-image.src = "/ArmadaProtocol/img/logo.png";
-ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
-
-image.onload = function(){
-	ctx.drawImage(image, window.innerWidth/2-223, 75);
-};
-
-window.onresize= function(event){
-	image.onload = function(){
-		//ctx.clearRect(0, 0, canvas.width, canvas.height);
-		//ctx.drawImage(image, window.innerWidth/2-223, 75);
-		//ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
-	}
-};
+// ctx = canvas.getContext('2d');
+// ctx.font="20pt 'Roboto', sans-serif";
+// ctx.textAlign = "center";
+// ctx.fillStyle = "#302D2A";
+// image.src = "/ArmadaProtocol/img/logo.png";
+//ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
+//
+// image.onload = function(){
+// 	ctx.drawImage(image, window.innerWidth/2-223, 75);
+// };
+//
+// window.onresize= function(event){
+// 	image.onload = function(){
+// 		//ctx.clearRect(0, 0, canvas.width, canvas.height);
+// 		//ctx.drawImage(image, window.innerWidth/2-223, 75);
+// 		//ctx.fillText("Bundling the world's digital assets",window.innerWidth/2,415);
+// 	}
+// };
 
 
 function init() {
@@ -123,7 +123,18 @@ function init() {
 	EAButton.style.marginRight = '10px';
 	EAButton.style.marginLeft = '10px';
 
+	var mainText = document.createElement( 'div' );
+	mainText.className = 'mainText';
+	mainText.innerHTML = "Bundling the world's digital assets.";
 
+	var mainLogo = document.createElement( 'div');
+	mainLogo.className = 'mainLogo';
+	var imgmainLogo = document.createElement( 'img' );
+	imgmainLogo.src = "/ArmadaProtocol/img/logo.png";
+	mainLogo.appendChild(imgmainLogo);
+
+  buttondiv.appendChild(mainLogo);
+	buttonDiv.appendChild(mainText);
 	buttonDiv.appendChild(EAButton);
 	buttonDiv.appendChild(downloadButton);
 	container.appendChild(buttonDiv);
