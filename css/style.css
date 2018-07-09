@@ -71,7 +71,7 @@ margin-bottom: 20px;
 
 .buttonContainer{
   position: absolute;
-  top: 45%;
+  top: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -84,9 +84,6 @@ margin-bottom: 20px;
   padding-bottom: 15px;
 }
 
-.mainLogo{
-  position: relative;
-}
 
 .btn.btn-primary:hover,
 .btn.btn-primary:focus,
