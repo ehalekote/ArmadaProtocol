@@ -71,7 +71,6 @@ margin-bottom: 20px;
 
 .buttonContainer{
   position: absolute;
-  top: 1%;
   left: 50%;
   transform: translateX(-50%);
 }
