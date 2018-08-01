@@ -131,7 +131,7 @@ function init() {
 
 	var mainText = document.createElement( 'div' );
 	mainText.className = 'mainText';
-	mainText.innerHTML = "Bundling the world's digital assets.";
+	mainText.innerHTML = "Sharing the world's digital assets.";
 
 	var mainLogo = document.createElement( 'div');
 	mainLogo.className = 'mainLogo';
